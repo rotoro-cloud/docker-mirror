@@ -1,4 +1,4 @@
-cat /etc/docker/daemon.json < EOF
+cat  << EOF > /etc/docker/daemon.json
 {
     "debug": true,
     "registry-mirrors": ["https://mirror.gcr.io"],
@@ -6,5 +6,4 @@ cat /etc/docker/daemon.json < EOF
 }
 EOF
 
-
-systemctl restart docker
+service docker restart
