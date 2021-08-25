@@ -1,4 +1,4 @@
-cat /etc/docker/daemon.json <<EOF
+cat /etc/docker/daemon.json < EOF
 {
     "debug": true,
     "registry-mirrors": ["https://mirror.gcr.io"],
